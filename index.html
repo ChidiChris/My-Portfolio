@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cc4fdc01eb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="images/Chidi.+transparent.png" class="logo">
+        <ul id="sidemenu">
+            <li><a class="clsA" href="#header">Home</a></li>
+            <li><a class="clsA" href="#about">About</a></li>
+            <li><a class="clsA" href="#services">Service</a></li>
+            <li><a class="clsA" href="#portfolio">Portfolio</a></li>
+            <li><a class="clsA" href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div id="header1"></div>
+    <div id="header">
+        <div class="container banner">
+            <div class="header-text">
+                <p>FrontEnd Developer</p>
+                <h1>Hi, I'm <span>Chidi</span><br>Christopher from Nigeria</h1>
+                <p class="last-text">As a seasoned frontend developer, i have a passion for creating user-friendly,
+                    intuitive interface that enhances the overall user experience</p>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/odogwu.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>Hi, my name is Chidiebube Christopher Onwugbufor, a passionate Front-End Developer that loves
+                            collaborating with other developers to build cool UIs and web projects. My
+                            technical experties and writing skills enable me to create clear and concise documentation
+                            that is easy to
+                            understand for both technical and
+                            non-technical audience. I equally have some experience on arduino programming and embedded
+                            system, thanks to Nascomsoft.
+
+                            My English proficiency level is also good, which allows me to communicate effectively. I am
+                            confident that my skills and experience
+                            will make me an ideal
+                            candidate for any task with regards to programming.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>Writing</span><br>Technical Writing</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024 - Current</span><br>FrontEnd Development Training at Learnable</li>
+                                <li><span>2023</span><br>FrontEnd Development Training at Genesys TecHub</li>
+                                <li><span>2023</span><br>UI/UX at Training at Genesys TecHub</li>
+                                <li><span>2023</span><br>FrontEnd Development at Nascomsoft</li>
+                                <li><span>2017 - 2018</span><br>Embedded System at Nascomsoft</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2009 - 2015</span><br>SSCE from St. Paul's Comp. Sec. Sch.</li>
+                                <li><span>2016 - 2017</span><br>IJMB</li>
+                                <li><span>2017 - 2024</span><br>B.Eng Mechatronics and System Engineering</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- services -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Capturing the essence of a brand through visually stunning and user friendly websites, our
+                            web design services prioritize seamless functionality and an engaging user experience</p>
+                        <a href="https://www.codecademy.com/catalog/subject/web-design">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-crop-alt"></i>
+                        <h2>UI Design</h2>
+                        <p>UI designs focuses on creating intuitive and visually appealing interfaces that ensure
+                            users can easily navigate through products or services. With a keen eye for aesthetics and
+                            functionality, we strive to elevate the interaction between users and digital devices</p>
+                        <a href="https://www.codecademy.com/learn/intro-to-ui-ux">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-keyboard"></i>
+                        <h2>Technical Writing</h2>
+                        <p>The skillful art of simplifying intricate concepts and processes into clear, concise, and
+                            easily understandable documentation. My writing skill involves creating user manuals,
+                            how-to-guide, and other instructional materials that effectively communicate complex
+                            information to a specific audience.</p>
+                        <a href="https://developers.google.com/tech-writing">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- portfolio -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Calculator App</h3>
+                            <p>An easy to use calculator web app where simple and complex calculations can be solved</p>
+                            <a href="https://chidichris.github.io/CalculatorApp/"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>To-Do List App</h3>
+                            <p>This app helps you to keep track of your daily routines and equally supports playing of
+                                music</p>
+                            <a href="https://chidichris.github.io/To-Do-List-App/"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Car dealership site</h3>
+                            <p>MotorHub offers a comprehensive car buying experience designed for customer convinience
+                                and flexibility.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/ChidiChris?tab=repositories" class="btn">See more</a>
+            </div>
+        </div>
+        <!-- contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>chidichristopher0@gmail.com</p>
+                        <p><i class="fa-solid fa-paper-plane"></i>+2348106766424</p>
+                        <P><i class="fa-solid fa-paper-plane"></i>+2349018636200</P>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/chidi.christopher.71"><i class="fab fa-facebook"></i></a>
+                            <a href="https://x.com/ChidiChriz"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=2348106766424"><i
+                                    class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/chidi_christopher_jr_?igsh=YzVkODRmOTdmMw=="><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/ChidiChris"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://chidichristopher0@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                        <a href="images/ONWUGBUFOR_C_CHIDIEBUBE_CV_2023[1].pdf" download class="btn btn2">Download
+                            CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" reauired>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© Designed by Chidi Christopher Onwugbufor<i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            // sidemenu.style.right = "0";
+            sidemenu.classList.toggle('active');
+        }
+        function closemenu() {
+            // sidemenu.style.right = "-200";
+            sidemenu.classList.toggle('active');
+        }
+
+        sidemenu.addEventListener('click', e => {
+            if (e.target.classList == 'clsA') {
+                sidemenu.classList.toggle('active');
+            }
+        })
+
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwo-emUJfWxVwj8Ioe6QIgxREl76kL2bzOAUxbJdGdrbekUzF-6zyf1EVsaxDO-QK1t/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
